@@ -3,8 +3,13 @@ import React from 'react';
 import { Button } from './Button';
 import './header.css';
 
+export interface Item {
+  icon?: React.ReactNode
+}
+
 interface HeaderProps {
   user?: {};
+  items?: Item[]
   onLogin: () => void;
   onLogout: () => void;
   onCreateAccount: () => void;

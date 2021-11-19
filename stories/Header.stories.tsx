@@ -17,3 +17,11 @@ LoggedIn.args = {
 
 export const LoggedOut = Template.bind({});
 LoggedOut.args = {};
+
+export const WithNestedJSXExpression: ComponentStory<typeof Header> = (args) => {
+  const items = [
+    {icon: <div />}
+  ]
+
+  return <Header {...args} items={items} />;
+}
